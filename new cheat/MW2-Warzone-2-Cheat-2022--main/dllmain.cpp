@@ -16,7 +16,7 @@ unsigned long __stdcall onAttach()
 	Globals::pGameBase = reinterpret_cast<uintptr_t>(GetModuleHandleA(NULL));
 	Utils::Log("Game base found:   ", Globals::pGameBase);
 
-	while (!(Globals::hWindow = FindWindowA(NULL, "Call of Duty®: Modern Warfare®")));
+	while (!(Globals::hWindow = FindWindowA(NULL, "Call of Duty® HQ")));
 	Utils::Log("Game window found: ", Globals::hWindow);
 
 	GetPid();
